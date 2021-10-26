@@ -1,0 +1,13 @@
+-- INSERT INTO AUTHOR VALUES (1000,'Tom Andriew','description');
+-- INSERT INTO AUTHOR VALUES (1001,'Mike Tohomos','description');
+-- INSERT INTO AUTHOR VALUES (1002,'Angilea Markel','description');
+-- INSERT INTO AUTHOR VALUES (1003,'Kalil Geberal','description');
+--
+--
+--
+-- INSERT INTO PUBLISHER VALUES (10000,'Barners publisher','shortStory1121','2324Greenland','Dallas','TX',43423);
+-- INSERT INTO PUBLISHER VALUES (10001,'Oxford publisher','shortStory1223','31324ParkRood','Austin','TX',65123);
+-- INSERT INTO PUBLISHER VALUES (10002,'Nobels publisher','shortStory89879','Downtown5thRoad','Dallas','TX',59265);
+--
+-- -- INSERT INTO BOOK VALUES(100,123456789012,'The Profit','poem and short stories','Kalil Geberal');
+-- -- INSERT INTO BOOK VALUES(100,123456789012,'The Profit','poem and short stories','Mike Tohomos');
