@@ -25,10 +25,16 @@ public class BookController {
         return bookService.findbyId(id);
     }
 
+    @GetMapping("/title")
+    public Book findbyTitle(@RequestParam("title") String title){
+        return bookService.findbyTitle(title);
+    }
+
     //@PostMapping
-   @RequestMapping(value = "/api/books", method = RequestMethod.POST)
-    public @ResponseBody Book addBook(@RequestBody Book book){
-       return   bookService.save(book);
+   @RequestMapping(value = "/admin", method = RequestMethod.POST)
+    public  Book addBook(@RequestBody Book book){
+       return    bookService.save(book);
+      // return new Book(book.Http.status(ok));
     }
 }
 

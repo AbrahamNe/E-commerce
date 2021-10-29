@@ -1,11 +1,18 @@
 package com.ecommerce.ecommercedemo.model;
 
-import org.springframework.data.jpa.repository.Temporal;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 
 @Entity
 public class ShoppingCart {
@@ -13,6 +20,7 @@ public class ShoppingCart {
     @GeneratedValue
     private double id;
 
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dayplaced;
     private OrderStatus orderstatus;
     @OneToMany

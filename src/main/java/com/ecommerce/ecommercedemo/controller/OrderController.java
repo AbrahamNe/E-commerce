@@ -24,7 +24,7 @@ public class OrderController {
          return orderService.findById(id);
      }
 
-     @PostMapping
+     @PostMapping("/admin")
     public  @ResponseBody void addOder(@RequestBody  BookOrder order){
         orderService.addOrder(order);
     }

@@ -11,6 +11,7 @@ public interface BookService {
     List<Book> findAll();
     Optional<Book> findbyId(long id);
     Book save(Book book);
+    Book findbyTitle(String title);
 
 
     //TODO :- add, update and delete book

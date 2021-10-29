@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Past;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -22,6 +23,8 @@ public class Book {
     private long isbn;
     private String title;
     private String description;
+
+    @Past
     @Temporal(TemporalType.DATE)
     private Date publishedDate;
     private double price;

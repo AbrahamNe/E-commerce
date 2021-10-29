@@ -10,6 +10,8 @@ import java.util.Optional;
 
 @Repository
 public interface AuthorRepository extends JpaRepository<Author,Long> {
- 
+
+    Author findAuthorByName(String name);
+
   
 }

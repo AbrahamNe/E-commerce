@@ -1,14 +1,15 @@
-package com.ecommerce.ecommercedemo.service;
+package com.ecommerce.ecommercedemo.service.Impl;
 
 import com.ecommerce.ecommercedemo.model.BookOrder;
 import com.ecommerce.ecommercedemo.repositories.BookOrderRepository;
+import com.ecommerce.ecommercedemo.service.BookOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class BokOrderServiceImpl implements BookOrderService{
+public class BokOrderServiceImpl implements BookOrderService {
 
     @Autowired
     private BookOrderRepository bookOrderRepository;
@@ -25,8 +26,10 @@ public class BokOrderServiceImpl implements BookOrderService{
 
     @Override
     public void addOrder(BookOrder bookOrder) {
+
     bookOrderRepository.save(bookOrder);
     }
+
 
 
 

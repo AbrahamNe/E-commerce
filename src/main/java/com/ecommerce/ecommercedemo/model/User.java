@@ -1,8 +1,18 @@
 package com.ecommerce.ecommercedemo.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 
 @Entity
 public class User {
@@ -11,13 +21,13 @@ public class User {
     private long id;
     private String firstName;
     private String lastName;
-    private int phoneNumber;
+
+    @Embedded
+    private Contact contact;
     @Embedded
     private  Address addresses;
-    private String username;
-    private String email;
-    private String passWord;
-
+    @Embedded
+    private Login login;
 
     @OneToOne
     private ShoppingCart cart;

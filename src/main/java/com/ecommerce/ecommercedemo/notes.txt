@@ -2,3 +2,5 @@
 @JsonIgnore: it will not be serialized
 PUT method replacing an exisiting resource entirely
 PATCH  partial update
+
+Request param("api/book?id=133") vs pathvariable("api/books/1211")
